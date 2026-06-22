@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.env.txt
+
+a-share-growth-screener/assets/a-share-growth-screener-project/data/cache/*
+a-share-growth-screener/assets/a-share-growth-screener-project/data/reports/pdf/*
+a-share-growth-screener/assets/a-share-growth-screener-project/data/reports/text/*
+a-share-growth-screener/assets/a-share-growth-screener-project/data/reports/sections/*
+a-share-growth-screener/assets/a-share-growth-screener-project/data/outputs/*.xlsx
+a-share-growth-screener/assets/a-share-growth-screener-project/data/outputs/*.csv
+!a-share-growth-screener/assets/a-share-growth-screener-project/data/outputs/.gitkeep

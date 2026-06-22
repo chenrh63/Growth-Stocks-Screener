@@ -1,0 +1,7 @@
+interface:
+  display_name: "A-Share Growth Screener"
+  short_description: "Screen A-share growth candidates"
+  default_prompt: "Use $a-share-growth-screener to set up and run the A-share quarterly growth validation screener."
+
+policy:
+  allow_implicit_invocation: true
