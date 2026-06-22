@@ -1,5 +1,7 @@
 # A-Share Growth Screener Skill
 
+中文说明：[README.zh-CN.md](README.zh-CN.md)
+
 This repository contains the `a-share-growth-screener` Codex skill.
 
 The skill bundles a complete Tushare-based A-share research workflow for:
