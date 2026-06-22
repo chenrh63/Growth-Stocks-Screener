@@ -1,0 +1,97 @@
+period: "20260630"
+candidate_filters:
+  exclude_st: true
+  exclude_bj: true
+  exclude_financial: true
+  min_listing_days: 0
+  financial_industries:
+    - "\u94f6\u884c"
+    - "\u8bc1\u5238"
+    - "\u4fdd\u9669"
+    - "\u591a\u5143\u91d1\u878d"
+screening:
+  target_count: 100
+  min_total_mv: 300000
+  min_circ_mv: 150000
+  min_avg_turnover_rate: 0.3
+  price_history_days: 260
+  min_financial_score: 50
+  min_drawdown_250d: -0.20
+  max_return_120d: 0.35
+  max_industry_return_120d: 0.05
+  require_positive_profit_dedt: true
+  weights:
+    growth: 0.35
+    theme: 0.20
+    valuation: 0.20
+    mispricing: 0.15
+    quality: 0.10
+text_analysis:
+  max_section_chars: 18000
+  keyword_window_chars: 900
+  min_primary_section_chars: 800
+  primary_section_titles:
+    - "\u7ba1\u7406\u5c42\u8ba8\u8bba\u4e0e\u5206\u6790"
+    - "\u7ecf\u8425\u60c5\u51b5\u8ba8\u8bba\u4e0e\u5206\u6790"
+    - "\u4e3b\u8425\u4e1a\u52a1\u5206\u6790"
+    - "\u8463\u4e8b\u4f1a\u62a5\u544a"
+  section_titles:
+    - "\u7ba1\u7406\u5c42\u8ba8\u8bba\u4e0e\u5206\u6790"
+    - "\u7ecf\u8425\u60c5\u51b5\u8ba8\u8bba\u4e0e\u5206\u6790"
+    - "\u8463\u4e8b\u4f1a\u62a5\u544a"
+    - "\u4e3b\u8425\u4e1a\u52a1\u5206\u6790"
+    - "\u6838\u5fc3\u7ade\u4e89\u529b"
+    - "\u516c\u53f8\u672a\u6765\u53d1\u5c55\u7684\u5c55\u671b"
+    - "\u672a\u6765\u5c55\u671b"
+    - "\u98ce\u9669\u56e0\u7d20"
+    - "\u53ef\u80fd\u9762\u5bf9\u7684\u98ce\u9669"
+  fallback_keywords:
+    - "\u8ba2\u5355"
+    - "\u5728\u624b\u8ba2\u5355"
+    - "\u4ea7\u80fd"
+    - "\u4ea7\u80fd\u5229\u7528\u7387"
+    - "\u5ba2\u6237"
+    - "\u6bdb\u5229\u7387"
+    - "\u4ef7\u683c"
+    - "\u9500\u91cf"
+    - "\u6d77\u5916"
+    - "\u5883\u5916"
+    - "\u51fa\u53e3"
+    - "\u5916\u9500"
+    - "\u65b0\u4ea7\u54c1"
+    - "\u52df\u6295"
+    - "\u5408\u540c\u8d1f\u503a"
+    - "\u9700\u6c42"
+    - "\u4ea4\u4ed8"
+    - "\u5e02\u5360\u7387"
+    - "\u7814\u53d1"
+    - "\u6269\u4ea7"
+    - "\u96c6\u91c7"
+    - "\u533b\u4fdd"
+    - "\u4e2d\u6807"
+scoring:
+  financial_weight: 0.45
+  text_confirmation_weight: 0.35
+  visibility_weight: 0.15
+  risk_quality_weight: 0.05
+ai_exclusion:
+  hard_exclude_keywords:
+    - "\u4eba\u5de5\u667a\u80fd"
+    - "AI"
+    - "AIGC"
+    - "\u5927\u6a21\u578b"
+    - "\u7b97\u529b"
+    - "\u6570\u636e\u4e2d\u5fc3"
+    - "\u534a\u5bfc\u4f53"
+    - "\u82af\u7247"
+    - "GPU"
+    - "\u5149\u6a21\u5757"
+    - "\u4e92\u8054\u7f51"
+    - "\u6e38\u620f"
+    - "\u901a\u4fe1\u8bbe\u5907"
+    - "\u5143\u5668\u4ef6"
+    - "IT\u8bbe\u5907"
+    - "\u7535\u4fe1\u8fd0\u8425"
+    - "\u8f6f\u4ef6\u5f00\u53d1"
+    - "\u8f6f\u4ef6\u670d\u52a1"
+    - "\u4fe1\u521b"
